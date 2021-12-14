@@ -1,0 +1,351 @@
+/* csss reset */
+*{
+    box-sizing: border-box;
+}
+/* default body style */
+body{
+
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  
+}
+/* dflex is for nav */
+.dflex{
+    display: flex;
+    justify-content: space-between;
+   
+    flex-wrap: wrap;
+    margin: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+.links{
+    display: flex;
+    list-style: none;
+}
+.links li a{
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: hsl(238, 22%, 44%);
+    cursor: pointer;
+}
+.links li a:hover{
+    color: hsl(243, 87%, 12%);
+}
+/* hero section starts  */
+.hero{
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.heroimage{
+    max-width: 600px;
+    max-height: 500px;
+}
+.title{
+    font-size: 3rem;
+   max-width :600px; 
+    font-weight: 700;
+}
+.hero p{
+    max-width: 450px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.calltoactionin{
+    padding: .7rem 1.5rem;
+    
+    margin: .5rem;
+    font-size: inherit;
+}
+/* gebreral button style */
+.btn{
+    padding: .7rem 2.5rem;
+    outline: none;
+    border: none;
+   
+    font-family: inherit;
+    color: white;
+    background-color: hsl(224, 93%, 58%);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: hsl(224, 93%, 48%);
+}
+
+/* start of productive section */
+.curv{
+
+}
+main{
+    background-color: #F8F8FE;
+}
+main img{
+    z-index: 2;
+    position: relative;
+    top: -20px;
+}
+.productive-content{
+    
+}
+.productive{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    flex-wrap: wrap;
+    /* background-color: #F8F8FE; */
+ 
+}
+.productive-content p{
+    max-width: 500px ;
+}
+.title2{
+    font-size: 2.5rem;
+}
+
+.productiveimg{
+
+    max-width: 600px;
+    max-height: 500px;
+}
+.greenlink{
+    color:  hsl(170, 45%, 43%);
+}
+/* design of card */
+.card{
+    
+    max-width: 350px;
+    box-shadow: 0 0 4px #cacaca;
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: white;
+}
+.avatar{
+   height: 50px;
+   width: 50px;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+.info{
+    display: flex;
+    align-items: center;
+    margin-top: 0%;
+    
+
+}
+.name p{
+    margin-top: 0%;
+
+}
+.name h3{
+    margin-bottom: 0%;
+}
+
+/* get acess call to action */
+
+.calltoaction{
+    background-color:  hsl(238, 22%, 44%);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 3rem;
+    flex-wrap: wrap;
+}
+.ctain{
+    padding: .7rem 4rem;
+    margin-left: 0%;
+}
+.actioncontent{
+    max-width: 500px;
+    margin-left: 2rem;
+}
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+   padding-right: 5rem;
+}
+li{
+    list-style: none;
+}
+
+/* starting of footer design */
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 3rem;
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+}
+.f4 .space {
+    display: flex;
+    
+}
+
+
+
+
+.flink{
+    padding: 15px;
+    border-radius: 50%;
+    border: 1px dashed white;
+   height: 50px;
+   width: 50px;
+    color: white;
+    font-size: .5rem;
+   
+}
+
+.space li{
+    padding: 1rem;
+}
+.footerlinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f1{
+    align-items: flex-start;
+    margin-top: -1rem;
+}
+
+/* media querry start here */
+
+@media only screen and (max-width: 1000px) {
+    
+    .dflex{
+        justify-content: center;
+    }
+    .hero{
+        justify-content: center;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+   .content{
+       justify-content: center;
+   }
+    .btn{
+        display: block;
+       margin: 0 auto;
+       padding: .7rem 5rem;
+    }
+    .content p{
+        margin: 0 auto;
+    }
+    .productive{
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .productive-content{
+        justify-content: center;
+    }
+    .title2{
+        font-size: 1.5rem;
+    }
+    .card{
+        margin: 0 auto;
+    }
+    .calltoaction{
+        justify-content: center;
+        text-align: center;
+    }
+    .cta{
+        width: 100%;
+       
+        padding-right: 0%;
+        justify-content: center;
+        align-items: center;
+    }
+    .cta button{
+        padding: .7rem 4rem;
+        
+       
+    }
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footerlinks{
+        flex-direction: column;
+       align-items: flex-start;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav{
+       flex-direction: row;
+        justify-content: center;
+    }
+    nav li a{
+        padding: 0;
+        margin: 0;
+    }
+    nav li{
+        margin: .5rem;
+    }
+    ul.links{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 0%;
+    }
+    .heroimage,.productiveimg{
+        width: 100%;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .productive-content p{
+        font-size: 1rem;
+    }
+    .actioncontent{
+        margin-left: 0%;
+    }
+    .cta input{
+        width: 100%;
+
+    }
+    .calltoactionin{
+        margin: 0%;
+        margin-bottom: .5rem;
+    }
+
+    .calltoaction .cat .btn{
+        width: 100%;
+        
+        margin-left: 0;
+        margin-right: 0%;
+        
+        
+        
+    }
+    .dflex{
+        margin: 0%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .dflex img{
+        width: 50px;
+        justify-content: space-between;
+    }
+    .links li a{
+        font-size: .7rem;
+        margin: 0%;
+    }
+
+
+
+  }
